@@ -4,7 +4,7 @@
         "docker-compose.yml"
     ],
     "service": "workspace",
-    "remoteUser": "vscode",
+    // "remoteUser": "vscode",
     "features": {
         "ghcr.io/devcontainers/features/java:1": {
             "jdkDistro": "amzn",
