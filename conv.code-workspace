@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "./ninja-demo"
+		},
+		{
+			"path": "./ui"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic"
+	}
+}

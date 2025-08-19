@@ -1,0 +1,13 @@
+services:
+  workspace:
+    image: mcr.microsoft.com/devcontainers/base:bookworm
+    volumes:
+      - type: volume
+        source: ninja_demo
+        target: /workspaces/ninja-demo
+      - type: volume
+        source: repo_web
+        target: /workspaces/ui
+volumes:
+  ninja_demo:
+  repo_web:

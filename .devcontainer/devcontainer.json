@@ -1,0 +1,41 @@
+{
+    "name": "conv",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "workspace",
+    "remoteUser": "vscode",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "jdkDistro": "amzn",
+            "version": "21",
+            "installMaven": true,
+            "mavenVersion": "3.9.11"
+        },
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "22",
+            "installYarn": true,
+            "yarnVersion": "1.22.19"
+        }
+    },
+    "forwardPorts": [
+        5173,
+        8080
+    ],
+    "customizations": {
+        "codespaces": {
+            "repositories": {
+                "demo-con/ninja-demo": {
+                    "permissions": {
+                        "contents": "read"
+                    }
+                },
+                "demo-con/ui": {
+                    "permissions": {
+                        "contents": "read"
+                    }
+                }
+            }
+        }
+    }
+}
